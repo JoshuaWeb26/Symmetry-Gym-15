@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+div, body {
+  box-sizing: border-box;
+}
+
+.main-section, header, footer, nav, ul {
+  width: 100%;
+}
+
+header {
+  background-color: red;
+}
+
+.header-nav ul {
+  display: flex; /* horizontal */
+  padding: 0;
+  justify-content: center;
+}
+
+.header-nav li {
+  list-style: none;
+  margin: 4px;
+}
+
+.header-nav a {
+  color: #fff;
+  display: inline-block;
+  padding: 6px 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.main-section {
+  display: flex; /* horizontal */
+  flex-grow: 1;
+}
+
+.main-section aside {
+  flex-grow: 1;
+}
+
+.secondary-nav {
+  min-width: 12rem;
+  text-align: center;
+}
+
+.secondary-nav ul {
+  padding: 0;
+}
+
+.secondary-nav li {
+  list-style: none;
+  margin: 0;
+}
+
+.secondary-nav a {
+  color: blue;
+  display: inline-block;
+  padding: 6px 10px;
+}
+
+aside, main {
+  padding: 10px 20px;
+}
+
+main {
+  flex-grow: 2;
+}
+
+/* Media Query para pantallas pequeñas (adaptabilidad Holy Grail) */
+@media screen and (max-width: 500px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer {
+  margin-top: auto;
+  color: #fff;
+  padding: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+h1, h2 {
+  color: yellow;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 10px auto;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: auto;
+  display: inline-block;
+  color: #fff;
+}
+
+footer a:active {
+  background-color: red;
+  border-radius: 50%;
+}
